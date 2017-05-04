@@ -93,7 +93,7 @@ function updateGameArea() {
         if (myGamePiece.crashWith(myObstacles[i])) {
             myObstacles = [];
             myGameArea.stop();
-            startGame();
+            setTimeout(function(){startGame()}, 1800);
         }
       }
     myGameArea.clear();
