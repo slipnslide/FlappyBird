@@ -48,7 +48,8 @@ function component(width, height, color, x, y, type) {
                         this.x,
                         this.y,
                         this.width, this.height);
-                } else {
+
+                }else {
                     ctx.fillStyle = color;
                     ctx.fillRect(this.x, this.y, this.width, this.height);
                 }
