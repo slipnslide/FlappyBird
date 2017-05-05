@@ -40,6 +40,7 @@ function component(width, height, color, x, y, type) {
     this.height = height;
     this.speedX = 0;
     this.speedY = 0;
+    this.bounce = 0.5;
     this.x = x;
     this.y = y;
     this.gravity = 0;
