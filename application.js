@@ -93,7 +93,10 @@ function updateGameArea() {
         if (myGamePiece.crashWith(myObstacles[i])) {
             myObstacles = [];
             myGameArea.stop();
-            setTimeout(function(){startGame()}, 1800);
+            var h1 = document.createElement("h1")
+            document.body.append(h1)
+            h1.append("Congratz! Your Final Score Was: " + myGameArea.frameNo)
+            setTimeout(function(){h1.remove(); startGame()}, 1800);
         }
       }
     myGameArea.clear();
